@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "chunkprecache",
+  "version": "${version}",
+  "name": "ChunkPrecache",
+  "description": "Reduces chunk loading stutter and entity culling overhead by pre-caching locations of important blocks and entities. Improves FPS stability by rendering priority markers ahead of time.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.chunkprecache.client.ChunkPrecacheClient"]
+  },
+  "depends": { 
+    "fabricloader": ">=0.16.14", 
+    "minecraft": "1.21.11", 
+    "fabric-api": "*",
+    "cloth-config": ">=17.0.144"
+  }
+}
